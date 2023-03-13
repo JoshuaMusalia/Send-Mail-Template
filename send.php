@@ -14,15 +14,15 @@ if(isset($_POST["send"])){
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
     //Enter your Email 
-    $mail->Username = 'seddyjoshua9@gmail.com';
+    $mail->Username = 'Enter your email';
     //Get your app Password from Google Accounts under 2 step verification
-    $mail->Password = 'qjqqxxtmcnaqimse';   
+    $mail->Password = 'Enter Your App Password';   
     $mail->SMTPSecure = 'ssl';
     $mail->Port = 465;
     
     $mail->setFrom($_POST['email']);
 
-    $mail->addAddress('seddyjoshua9@gmail.com');
+    $mail->addAddress(''Enter recipient email'');
     $mail->isHTML(true);
 
     $mail->Subject = $_POST['subject'];
